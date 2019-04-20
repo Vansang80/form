@@ -1,4 +1,16 @@
+<?php
+ 	if(isset($_POST['form-submit'])){
+ 		if (!empty($_POST['gender']) && !empty($_POST['prenom']) && !empty($_POST['nom']) &&
+			!empty($_POST['code_postal']) && !empty($_POST['ville']) && !empty($_POST['social']) &&
+			!empty($_POST['tel']) && !empty($_POST['ask'])){
 
+ 			$erreur = '';
+ 		} else {
+ 			$erreur = 'Veuillez remplir tous les champs !';
+ 		}
+ 	}
+
+?>
 
 <!DOCTYPE html>
 <html>
@@ -29,7 +41,7 @@
    							<input type="radio" name="gender" value="Mr" id="Mr"/><label class='info' for="Mr">Mr</label><br />
    							<input class='position-name' type="text" name="prenom" placeholder="Prénom*"/><br />
    							<input type="text" name="nom" placeholder="Nom*"/><br />
-   							<input type="text" name="prenom" placeholder="Code postal*"/><br />
+   							<input type="text" name="code_postal" placeholder="Code postal*"/><br />
    							<input type="text" name="ville" placeholder="Ville*"/><br />
    							<input type="text" name="social" placeholder="Raison sociale*"/><br />
    							<input type="text" name="tel" placeholder="Téléphone*"/><br />
@@ -54,8 +66,9 @@
    								<div class='arrow'>
    									<div class='arrow-position'><img src='img/arrow.png' alt='arrow'></div>
    								</div>
-   								<input type="submit" value="ÊTRE RECONTACTÉ" />
+   								<input type="submit" name='form-submit' value="ÊTRE RECONTACTÉ" />
    							</div>
+   							<div class='error'><?php if($erreur) echo $erreur ?></div>
    						</div>
 					</form>
 				</div>
