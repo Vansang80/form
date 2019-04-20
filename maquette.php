@@ -53,11 +53,8 @@
    							<div class='btn-submit'>
    								<div class='arrow'>
    									<div class='arrow-position'><img src='img/arrow.png' alt='arrow'></div>
-   									
    								</div>
-   								<div class='contact'>
-   									<div>ÊTRE RECONTACTÉ</div>
-   								</div>
+   								<input type="submit" value="ÊTRE RECONTACTÉ" />
    							</div>
    						</div>
 					</form>
