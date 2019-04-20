@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Helvetica-Bold';
+    src: url('Helvetica-Bold-Font.ttf') format('truetype')
+}
+
+body{
+	background-color: #ededed;
+	margin: 0px;
+}
+
+
+/* HEADER */
+
+.header{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 28px;
+
+}
+
+.header-logo{
+	margin-right: 15px;
+	margin-left: 11px;
+}
+
+.header-title{
+	height: 95px;
+	width: 480px;
+	background-color: white;
+	font-family: 'Helvetica-Bold';
+	color: #f59100;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 58px;
+}
+
+.header-title div{
+	margin-left: 42px;
+}
+
+/* SECTION */
+
+.section{
+	display: flex;
+	flex-direction: row;
+	margin-top: 60px;
+}
+
+.form{
+	width: 302px;
+	height: 540px;
+	box-sizing: border-box;
+	background-color: white;
+	font-family: 'Open Sans', sans-serif;
+	color: #bfbfbf;
+	font-size: 15px;
+	padding: 33px 21px;
+}
+
+input[type="text"]{
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #bfbfbf;
+	margin-bottom: 28px;
+	font-size: 14px;
+	outline: none;
+	line-height: 40px;
+}
+
+.position-name{
+	margin-top: 20px;
+}
+
+.civility{
+	margin-right: 22px;
+}
+
+.info{
+	margin-left: 10px;
+}
+
+input[type="text"]::placeholder{
+    color : #bfbfbf;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 600px){
+	.header-title{
+		width: 50%;
+	}
+}
