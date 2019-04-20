@@ -162,6 +162,12 @@ input[type="text"]{
 	color: red;
 }
 
+
+.information{
+	background-color: white;
+	font-size: 15px;
+}
+
 input[type="text"]::placeholder{
     color : #bfbfbf;
 }

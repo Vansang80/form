@@ -5,8 +5,19 @@
 			!empty($_POST['tel']) && !empty($_POST['ask'])){
 
  			$erreur = '';
+ 			$show = true;
+ 			$gender = htmlspecialchars($_POST['gender']);
+ 			$firstname = htmlspecialchars($_POST['prenom']);
+ 			$lastname = htmlspecialchars($_POST['nom']);
+ 			$zip = htmlspecialchars($_POST['code_postal']);
+ 			$city = htmlspecialchars($_POST['ville']);
+ 			$social = htmlspecialchars($_POST['social']);
+ 			$phone = htmlspecialchars($_POST['tel']);
+ 			$ask = htmlspecialchars($_POST['ask']);
+
  		} else {
  			$erreur = 'Veuillez remplir tous les champs !';
+ 			$show = false;
  		}
  	}
 
@@ -72,10 +83,26 @@
    						</div>
 					</form>
 				</div>
-				<div>
-
-				</div>
 			<div>
+		</section>
+		<section>
+			<?php 
+				if ($show){
+					echo "
+						<div class='information'>
+							<p>Information :</p>
+							<p>Civilité : {$gender}</p>
+							<p>Prénom : {$firstname}</p>
+							<p>Nom : {$lastname}</p>
+							<p>Code postal : {$zip}</p>
+							<p>Ville : {$city}</p>
+							<p>Raison sociale : {$social}</p>
+							<p>Téléphone : {$phone}</p>
+							<p>Demande : {$ask}</p>
+						</div>
+					";
+				}
+			?>
 		</section>
 	</body>
 </html>
