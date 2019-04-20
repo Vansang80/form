@@ -28,9 +28,9 @@
    							<input type="radio" name="gender" value="Mr" id="Mr"/><label class='info' for="Mr">Mr</label><br />
    							<input class='position-name' type="text" name="prenom" placeholder="Prénom*"/><br />
    							<input type="text" name="nom" placeholder="Nom*"/><br />
-   							<input type="text" name="prenom" placeholder="Prénom*"/><br />
+   							<input type="text" name="prenom" placeholder="Code postal*"/><br />
    							<input type="text" name="ville" placeholder="Ville*"/><br />
-   							<input type="text" name="social" placeholder="Raison social*"/><br />
+   							<input type="text" name="social" placeholder="Raison sociale*"/><br />
    							<input type="text" name="tel" placeholder="Téléphone*"/><br />
 					</form>
 				</div>
