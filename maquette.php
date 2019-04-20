@@ -90,7 +90,7 @@
 				if ($show){
 					echo "
 						<div class='information'>
-							<p>Information :</p>
+							<p>Information concernant votre demande :</p>
 							<p>Civilité : {$gender}</p>
 							<p>Prénom : {$firstname}</p>
 							<p>Nom : {$lastname}</p>
