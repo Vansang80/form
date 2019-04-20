@@ -49,8 +49,23 @@ body{
 	margin-top: 60px;
 }
 
+form{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+.form-position{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-left: 11px;
+	}
+
 .form{
-	width: 302px;
+	width: 300px;
 	height: 540px;
 	box-sizing: border-box;
 	background-color: white;
@@ -58,6 +73,78 @@ body{
 	color: #bfbfbf;
 	font-size: 15px;
 	padding: 33px 21px;
+	margin-right: 10px;
+}
+
+.submit{
+	width: 267px;
+	height: 540px;
+	background-color: white;
+	box-sizing: border-box;
+	color: #f59100;
+	padding: 46px 21px;
+}
+
+.ask{
+	font-size: 19px;
+	font-weight: normal;
+	font-family: 'Arial', sans-serif;
+}
+
+.btn-radio{
+	margin-left: 4px;
+	margin-top: 14px;
+}
+
+.btn-submit{
+	width: 220px;
+	height: 52px;
+	border-radius: 6px;
+	margin-top: 246px;
+	background-color: #efefef;
+	margin-left: 2px;
+	display: flex;
+	flex-direction: row;
+}
+
+.contact{
+	color: #f59100;
+	font-family: 'Arial', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	margin-left: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.arrow{
+	width: 45px;
+	height: 100%;
+	border-radius: 6px 0px 0px 6px;
+	background-color: #f59100;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.arrow-position{
+	position: relative;
+	left: 2px;
+}
+.btn-radio-pos{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 9px;
+}
+
+.radio_png{
+	position: relative;
+	top: 3px;
+	left: 12px;
 }
 
 input[type="text"]{
